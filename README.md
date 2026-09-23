@@ -59,8 +59,8 @@ The default embedding model is `sentence-transformers/all-MiniLM-L6-v2`. All doc
 ## 6. Setup — local/GitHub clone
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd basic-document-qa-rag
+git clone https://github.com/kattaragini/rag-document-qa-bot.git
+cd rag-document-qa-bot
 
 python -m venv .venv
 # Windows:
