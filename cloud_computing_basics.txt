@@ -1,0 +1,23 @@
+Cloud Computing Basics
+
+Cloud computing provides computing resources such as servers, storage, databases, networking, and application services through a provider-managed infrastructure. Instead of purchasing and maintaining all hardware directly, organizations can provision resources when needed and pay according to the selected service and usage model.
+
+Infrastructure as a Service provides fundamental computing resources such as virtual machines, networks, and storage. Platform as a Service provides a managed environment in which developers can deploy applications without managing every underlying operating-system detail. Software as a Service delivers complete applications to end users. These models shift different amounts of operational responsibility from the customer to the cloud provider.
+
+Cloud services can be deployed using public, private, or hybrid approaches. A public cloud is operated by a provider and shared across customers with logical isolation. A private cloud is dedicated to a particular organization. A hybrid approach connects environments so that workloads or data can be placed where appropriate. Multi-cloud strategies use services from multiple providers, often for organizational or technical reasons.
+
+Scalability is the ability to handle changes in workload. Vertical scaling increases the capacity of an existing resource, such as giving a server more memory. Horizontal scaling adds more instances. Auto-scaling can automatically adjust resources based on demand. High availability is achieved by reducing dependence on a single failure point, often by using multiple instances or availability zones.
+
+Cloud storage can be categorized into object, block, and file storage. Object storage is useful for documents, images, backups, and other large collections of independent objects. Block storage provides volumes that can be attached to compute instances. File storage presents a shared filesystem interface. Selecting storage depends on access patterns, performance, durability, and cost.
+
+Identity and access management controls who or what can access cloud resources. A secure design normally follows least privilege, uses strong authentication, rotates credentials, and separates human users from application identities. Secrets should not be placed directly in source code. Environment variables, secret managers, or workload identities are preferred mechanisms for configuration and credentials.
+
+Cloud networking typically includes virtual networks, subnets, routing, firewalls or security groups, and load balancers. Publicly exposed services should be minimized. Internal services can often be placed in private network segments and accessed through controlled paths. Network logs and access policies can help detect unexpected activity.
+
+Observability is important for cloud applications. Logs record events, metrics measure numerical signals such as CPU usage and request latency, and traces follow requests through multiple services. Together these signals help engineers diagnose failures and performance problems. Alerts should focus on actionable conditions rather than generating excessive noise.
+
+Cloud cost management involves selecting appropriate resource sizes, shutting down unused resources, using storage tiers appropriately, and monitoring usage. Managed services can reduce operational work but may have usage-based pricing. Teams should understand service limits and cost drivers before deploying workloads at scale.
+
+Reliability requires planning for failures. Backups should be tested, not merely configured. Applications should handle transient errors using controlled retries and timeouts. Disaster recovery plans define recovery objectives and procedures. Infrastructure as code can make environments reproducible because resources are described in version-controlled configuration.
+
+Security in cloud environments is a shared responsibility. The provider secures the underlying infrastructure, while customers remain responsible for many aspects of identity, data, application configuration, and access control. The exact division depends on the service used. Understanding this boundary helps teams avoid assuming that the provider automatically protects every application-level setting.

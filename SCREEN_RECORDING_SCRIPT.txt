@@ -1,0 +1,14 @@
+3–8 minute demo checklist
+
+1. Show the GitHub/project folder structure.
+2. Open README briefly and point out the architecture and setup.
+3. Run: python -m scripts.build_index
+   Explain: documents -> cleaning -> chunks -> batched embeddings -> FAISS persistence.
+4. Run: python -m scripts.chat
+5. Ask at least five questions covering at least two different documents.
+6. For each answer, point out the Sources section and the retrieved source chunks printed by the bot.
+7. Ask an unanswerable question such as: "What is the capital of France?"
+   Explain that the bot should refuse because that information is not in the knowledge base.
+8. Briefly explain one design decision:
+   "I chose fixed-size word chunks with overlap because the document collection is mixed-format and this gives predictable chunk sizes while reducing context loss at boundaries. I used batched Sentence Transformer embeddings and a persistent FAISS index so embeddings are not recomputed on every query."
+9. Stop recording only after showing a working live run.

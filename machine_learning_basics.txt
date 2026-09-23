@@ -1,0 +1,21 @@
+Machine Learning Basics
+
+Machine learning is a field of artificial intelligence in which algorithms learn patterns from data and use those patterns to make predictions or decisions. A typical machine learning workflow starts with defining the problem, collecting data, cleaning the data, exploring relationships, preparing features, training a model, evaluating performance, and finally deploying and monitoring the solution.
+
+Supervised learning uses labeled examples. In classification, the target is a category such as spam or not spam. In regression, the target is a continuous value such as price or temperature. Unsupervised learning works without labeled targets and can be used for tasks such as clustering or dimensionality reduction. The appropriate learning approach depends on the problem and the available data.
+
+Data preparation is often one of the most important parts of a machine learning project. Missing values may need to be removed or imputed. Categorical variables can be converted to numerical representations using techniques such as one-hot encoding. Numerical features may need scaling when the chosen algorithm is sensitive to feature magnitude. Duplicate or inconsistent records should be investigated because poor input quality can produce misleading results.
+
+A dataset is commonly divided into training and testing portions. The training set is used to learn model parameters, while the test set is held back for an unbiased final evaluation. A validation set or cross-validation can be used to compare configurations during development. It is important to avoid data leakage, where information from the test set or future observations accidentally influences training.
+
+Overfitting happens when a model learns the training data too closely and performs poorly on unseen examples. Underfitting occurs when the model is too simple to capture important relationships. Regularization, better feature selection, more data, early stopping, and model complexity controls can help reduce overfitting. The goal is not to memorize the training examples but to generalize to new data.
+
+Classification can be evaluated using accuracy, precision, recall, F1 score, and a confusion matrix. Accuracy measures the fraction of correct predictions, but it can be misleading for highly imbalanced datasets. Precision measures how many predicted positives are actually positive. Recall measures how many actual positives were found. F1 combines precision and recall into a single harmonic-mean measure.
+
+Regression metrics include mean absolute error, mean squared error, root mean squared error, and coefficient of determination. The choice of metric should reflect the practical consequences of prediction errors. For example, a system where large errors are especially costly may place more emphasis on squared-error metrics.
+
+Common algorithms include linear regression, logistic regression, decision trees, random forests, gradient boosting, support vector machines, k-nearest neighbors, and neural networks. Tree-based methods can capture nonlinear relationships and interactions without requiring feature scaling. Neural networks are particularly useful for complex tasks such as image, audio, and language processing, but they often require more data and computational resources.
+
+A machine learning model is not finished when training ends. Deployment introduces operational concerns such as latency, resource usage, data drift, model drift, logging, and monitoring. A reliable system tracks model performance over time and defines a process for retraining or rollback. Reproducibility also matters, so data versions, code versions, configuration, and model artifacts should be recorded.
+
+Ethical and security considerations should be included in machine learning development. Training data can contain bias or sensitive information. Teams should understand what data is being collected, how it is used, and who can access it. Evaluation should consider relevant subgroups when appropriate. Clear documentation of assumptions, limitations, and intended use helps users understand what a model can and cannot reliably do.

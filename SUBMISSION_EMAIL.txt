@@ -1,0 +1,15 @@
+Subject: AI Intern – Stage 2 Technical Assignment Submission – Basic Document Q&A Bot
+
+Dear Hiring Team,
+
+Please find my submission for the Stage 2 Technical Evaluation for the AI Intern position.
+
+GitHub Repository: [PASTE YOUR PUBLIC GITHUB REPOSITORY URL]
+Screen Recording: [PASTE YOUR LOOM / SCREEN RECORDING URL]
+
+The repository contains the complete RAG pipeline, source code, README, document collection, and Google Colab notebook.
+
+Thank you for the opportunity. I look forward to your feedback.
+
+Regards,
+[Your Name]

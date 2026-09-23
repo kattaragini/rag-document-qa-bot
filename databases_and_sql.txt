@@ -1,0 +1,21 @@
+Databases and SQL
+
+A database is an organized system for storing and retrieving information. Relational databases represent information in tables containing rows and columns. A table generally represents an entity or relationship, and a primary key identifies each row uniquely. Foreign keys connect related tables and help preserve referential integrity.
+
+SQL, or Structured Query Language, is used to create, read, update, and delete relational data. SELECT retrieves data, INSERT adds rows, UPDATE changes existing rows, and DELETE removes rows. WHERE filters rows according to a condition. ORDER BY controls the ordering of returned records, while GROUP BY combines rows into groups for aggregate calculations.
+
+Aggregate functions include COUNT, SUM, AVG, MIN, and MAX. They are often used with GROUP BY to answer questions such as how many customers belong to each city or what the average order value is for each category. The HAVING clause filters groups after aggregation, whereas WHERE filters individual rows before grouping.
+
+Joins combine information from multiple tables. An INNER JOIN returns matching records from both sides. A LEFT JOIN returns all records from the left table and matching records from the right table, using null values where no match exists. Choosing the correct join is important because an incorrect join can either lose required records or produce duplicate results.
+
+Database normalization is a design technique used to reduce unnecessary duplication and update anomalies. First Normal Form generally requires atomic values and no repeating groups. Second Normal Form addresses partial dependency on part of a composite key. Third Normal Form removes transitive dependencies between non-key attributes. Normalization improves consistency, although some analytical systems intentionally use denormalized structures for performance.
+
+Indexes are data structures that can speed up searches and joins. A database can use an index to find matching records without scanning every row. However, indexes consume storage and can increase the cost of inserts and updates because the index must also be maintained. Indexes should therefore be created based on actual query patterns rather than added indiscriminately.
+
+Transactions allow multiple database operations to be treated as a logical unit. The ACID properties are atomicity, consistency, isolation, and durability. Atomicity means a transaction is all-or-nothing. Consistency means transactions preserve defined constraints. Isolation controls how concurrent transactions interact. Durability means committed changes survive failures.
+
+NoSQL databases use data models other than the traditional relational table model. Document databases store records as documents, often represented as JSON-like objects. Key-value stores associate keys with values, while graph databases focus on relationships. NoSQL systems can be useful when flexible schemas, horizontal scaling, or particular access patterns are important.
+
+Database security includes authentication, authorization, encryption, auditing, and safe query construction. Application code should avoid constructing SQL statements through unsafe string concatenation with untrusted input. Parameterized queries or trusted database libraries help prevent SQL injection. Access should follow the principle of least privilege so that an application account has only the permissions it requires.
+
+For analytics, a database may be connected to dashboards or data pipelines. Extracting large datasets efficiently requires attention to filtering, indexing, pagination, batching, and query plans. Monitoring slow queries can reveal opportunities for optimization. Backups and recovery procedures are also essential because data loss can have significant business consequences.
